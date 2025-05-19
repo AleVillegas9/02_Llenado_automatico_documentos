@@ -7482,7 +7482,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="02-Llenado-autom%C3%A1tico-de-archivos-desde-una-base-de-datos-con-python">02 Llenado automático de archivos desde una base de datos con python<a class="anchor-link" href="#02-Llenado-autom%C3%A1tico-de-archivos-desde-una-base-de-datos-con-python">¶</a></h1>
+<h1 id="02.-Llenado-autom%C3%A1tico-de-archivos-desde-una-base-de-datos-con-python">02. Llenado automático de archivos desde una base de datos con python<a class="anchor-link" href="#02.-Llenado-autom%C3%A1tico-de-archivos-desde-una-base-de-datos-con-python">¶</a></h1>
 </div>
 </div>
 </div>
@@ -7493,7 +7493,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Alejandro Villegas</p>
+<p>Alejandro Villegas.</p>
 </div>
 </div>
 </div>
@@ -7515,8 +7515,9 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Esta proyecto/demostración está realizado en lenguaje Python. Para su construcción se utilizó el entorno de desarrollo Spyder. Para la cosntrucción de este documento explicativo se utilizó el entorno de desarrollo Jupyter y formato Markdown.</p>
-<p>En el repositorio de github de este proyecto encontrarás, los insumos y el código y los productos del código aquí explicados. Esto para facilitar su reproductibilidad.</p>
+<p>Esta proyecto/demostración está realizado en lenguaje Python. Para su construcción se utilizó el entorno de desarrollo Spyder. Para la construcción de este documento explicativo se utilizó el entorno de desarrollo Jupyter y formato Markdown.</p>
+<p>En el repositorio de github de este proyecto encontrarás, los insumos y el código y los productos del código aquí explicados. Esto para facilitar su reproductibilidad.
+<a href="https://github.com/AleVillegas9/02_Llenado_automatico_documentos" target="_blank">Repositorio Github</a></p>
 </div>
 </div>
 </div>
@@ -7527,18 +7528,17 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Problema-a-resolver">Problema a resolver<a class="anchor-link" href="#Problema-a-resolver">¶</a></h1><p>Puede darse el caso en el cual, tenemos que rellenar un ciertos datos en un gran número de documentos. Y ocurre que los datos con los cuales tenemos que llenar se encuentran en un documento excel. Naturalmente, podriamos llenar uno por uno los documentos, sin embargo, cuando el número de documentos es muy grande, esto nos puede llevar mucho tiempo y esfuerzo. Por fortuna, vivimos en una época en la cual podemos utilizar las posibilidades que ofrece Python para solucionar el problema.</p>
-<p>Para este ejercicio, supondré soy el supervisor de varios colegios, y que debo crear examenes personalizados para cada uno de los alumnos bajo mi cargo. Para ello, cada uno de los examenes deberá contener el nombre, los apellidos, el número de plantel, el número de grupo, el turno en el que el alumno asiste a la escuela, la edad y el género del alumno.</p>
-<p>En este ejercicio, se planteó una situación donde se requrían examenes, sin embargo, haya otros ámbitos donde esto puede ser útil, como por ejemplo, para formularios de beneficiarios, o similares.</p>
+<h1 id="Problema-a-resolver">Problema a resolver<a class="anchor-link" href="#Problema-a-resolver">¶</a></h1><p>Llenar documentos puede ser muy tedioso, sobretodo cuando son muchos y sólo varían una determinada cantidad de datos entre uno y otro. Puede ocurrir que los datos que utilizaremos para llenar los documetnos se encuentren en una base de datos (por ejemplo, un documento de excel). Naturalmente, podriamos llenar uno por uno los documentos, sin embargo, cuando el número de documentos es muy grande, esto nos puede llevar mucho tiempo y esfuerzo. Por fortuna, vivimos en una época en la cual podemos utilizar las posibilidades que ofrece Python para solucionar el problema.</p>
+<p>Para este ejercicio, supondré soy el supervisor de varios colegios, y que debo crear examenes personalizados para cada uno de los alumnos bajo mi cargo. Para ello, cada uno de los examenes deberá contener el nombre, los apellidos, el número del profesor, el turno en el que el alumno asiste a la escuela, la edad y el género del alumno.</p>
+<p>En este ejercicio, se planteó una situación donde se requieren examenes, sin embargo, haya otros ámbitos donde esto puede ser útil, como por ejemplo, para formularios de beneficiarios de programas, publicidad personalizada, etc.</p>
 <h1 id="Insumos.">Insumos.<a class="anchor-link" href="#Insumos.">¶</a></h1><p>Para llevar a cabo este ejercicio presupondrémos que contamos con los siguientes insumos:</p>
 <ul>
-<li><p>Una base de datos que contenga los datos de cada uno de los alumnos.</p>
+<li><p>Una base de datos que contenga los datos de cada uno de los alumnos. Esta base de datos se generó con datos ficticios a partir de funciones de aleatorización en Python.</p>
 </li>
-<li><p>Una plantilla del examen (o del documento) que se va a llenar en formato word.</p>
+<li><p>Una plantilla del examen (o del documento) que se va a llenar en formato word. Esta plantilla se obtuvo de preguntas ejemplo de matemáticas de sexto semestre de bachillerato.</p>
 </li>
 </ul>
-<p>Los insumos que se utilizaron en este ejercicio se encuentran en el repositorio de github: LINK</p>
-<h1 id="Metodolog%C3%ADa.">Metodología.<a class="anchor-link" href="#Metodolog%C3%ADa.">¶</a></h1><h1 id="Paso-1:-Preparaci%C3%B3n-de-la-base-de-datos">Paso 1: Preparación de la base de datos<a class="anchor-link" href="#Paso-1:-Preparaci%C3%B3n-de-la-base-de-datos">¶</a></h1><p>En este punto se presupone que se tiene una base de datos limpia, que conserva solo las columnas de los datos que nos interesan. Así pues, procedeos a cargar la base, y nos quedaría algo como lo siguiente:</p>
+<h1 id="Metodolog%C3%ADa.">Metodología.<a class="anchor-link" href="#Metodolog%C3%ADa.">¶</a></h1><h1 id="Paso-1:-Preparaci%C3%B3n-de-la-base-de-datos">Paso 1: Preparación de la base de datos<a class="anchor-link" href="#Paso-1:-Preparaci%C3%B3n-de-la-base-de-datos">¶</a></h1><p>En este punto se presupone que se tiene una base de datos limpia, que conserva solo las columnas de los datos que nos interesan. Así pues, procedemos a cargar la base. Nos quedaría algo como lo siguiente:</p>
 </div>
 </div>
 </div>
@@ -7590,10 +7590,9 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Paso-2:-Preparaci%C3%B3n-de-la-plantilla.">Paso 2: Preparación de la plantilla.<a class="anchor-link" href="#Paso-2:-Preparaci%C3%B3n-de-la-plantilla.">¶</a></h1><p>Esta metodología presupone que el usuario ya tiene lista la plantilla que servirá de base para ser llenada. En este caso el examen. Así pues, lo primero que se debe de hacer es llenar los datos que se van a sustituir en cada documento individual, con un indicador. El indicador se caracteriza por ir entre una doble llave {{}}.</p>
-<p>Algo de <strong>vital importancia</strong> es que los nombres de las columnas de la base de datos, debe de coincidir con los nombres de los indicadores, es decir con lo que va entre la doble llave. Por ejemplo, el dato de nombre del alumno, el naame coincide en el indicador y en la columna de la base de datos que muestra los nombres.</p>
-<p>Así pues, la plantilla debería quedar como lo siguiente: 
- plantilla.</p>
+<h1 id="Paso-2:-Preparaci%C3%B3n-de-la-plantilla.">Paso 2: Preparación de la plantilla.<a class="anchor-link" href="#Paso-2:-Preparaci%C3%B3n-de-la-plantilla.">¶</a></h1><p>Esta metodología presupone que el usuario ya tiene lista la plantilla que servirá de base para ser llenada. En este caso el examen. Así pues, lo primero que se debe de hacer es llenar los datos que se van a sustituir en cada documento individual, con un indicador. El indicador se caracteriza por ir entre una doble llave {{ejemplo de indicador}}.</p>
+<p>Algo de <strong>vital importancia</strong> es que los nombres de las columnas de la base de datos, debe de coincidir con los nombres de los indicadores, es decir con lo que va entre la doble llave. Por ejemplo, el dato de nombre del alumno, el "name" coincide en el indicador y en la columna de la base de datos que muestra los nombres.</p>
+<p>Así pues, la plantilla debería quedar como lo siguiente:</p>
 </div>
 </div>
 </div>
@@ -7652,14 +7651,35 @@ a.anchor-link {
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=414acdec-e9d3-4603-9315-d60e6fe31ac6">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=cbd16a2b-6c68-4b66-9082-4443d23706fa">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Paso-3:-Lista-%C3%BAnica-de-grupos-(n%C3%BAmero-de-profesores)">Paso 3: Lista única de grupos (número de profesores)<a class="anchor-link" href="#Paso-3:-Lista-%C3%BAnica-de-grupos-(n%C3%BAmero-de-profesores)">¶</a></h1><p>Como tenemos distintos grupos, y cada grupo se identifica por el número del profesor, entonces conviene agrupar los exaamenes por grupo. Esto es así porque los examenes se aplicarán a todos los alumnos de un grupo al mismmo tiempo. Entonces para llevar un control e imprimir los examenes de manera adecuada, necesitamos crear dos cosas. La primeraa de ellas es un examen individual con los datos de los alumnos, y la segunda es un archivo que junte todos los examenes individuales de un solo grupo.</p>
-<p>El primer paso para lograr esto, es hacer una lista con los valores únicos de los datos que identifican a cada grupo, en este caso, son los datos de los profesore Antes de crear la lista, transformamos el tipo de dato de la columna profesores de numérico a <em>string</em>s.</p>
+<h1 id="Paso-3:-Lista-%C3%BAnica-de-grupos-(n%C3%BAmero-de-profesor.)">Paso 3: Lista única de grupos (número de profesor.)<a class="anchor-link" href="#Paso-3:-Lista-%C3%BAnica-de-grupos-(n%C3%BAmero-de-profesor.)">¶</a></h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4f15b94c-ba76-4101-9346-c57ed3d5629d">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Como tenemos distintos grupos, y cada grupo se identifica por el número del profesor, entonces conviene agrupar los examenes por profesor, de tal manera que, en un sólo archivo estén contenidos los examenes de todos los alumnos de ese grupo. Así pues, para llevar cierto control e imprimir los examenes de manera adecuada, necesitamos crear dos cosas. La primera de ellas es un examen individual con los datos de los alumnos, y la segunda es un archivo que junte todos los examenes individuales de un solo grupo.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ce6fe06d-75d3-4eae-b5f4-cf057e855066">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>El primer paso para lograr esto, es hacer una lista con los valores únicos de los datos que identifican a cada grupo, en este cas el número asignado a los profesores. e Antes de crear la lista, transformamos el tipo de dato de la columna profesores de numérico a <em>string</em> , pues permitirá hacer un manejo más sencillo de los datos.</p>
 </div>
 </div>
 </div>
@@ -7699,7 +7719,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Paso-4:-Creaci%C3%B3n-de-funciones.">Paso 4: Creación de funciones.<a class="anchor-link" href="#Paso-4:-Creaci%C3%B3n-de-funciones.">¶</a></h1><p>Para llevar a cabo nuestro propósito necesitamos crear un conjunto de funciones que ejecuten cada uno de los pasos para llegaar a la meta. Para crear estas funciones primero importamos las librerias que necesitamos.</p>
+<h1 id="Paso-4:-Creaci%C3%B3n-de-funciones.">Paso 4: Creación de funciones.<a class="anchor-link" href="#Paso-4:-Creaci%C3%B3n-de-funciones.">¶</a></h1><p>Para llevar a cabo nuestro propósito necesitamos crear un conjunto de funciones que ejecuten cada uno de los pasos para llegar a la meta. Para crear estas funciones primero importamos las librerias que necesitamos.</p>
 </div>
 </div>
 </div>
@@ -7738,7 +7758,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Funci%C3%B3n-p%C3%A1ra-llenar-el-documento-word.">Función pára llenar el documento word.<a class="anchor-link" href="#Funci%C3%B3n-p%C3%A1ra-llenar-el-documento-word.">¶</a></h2>
+<h2 id="Paso-4.1:-Funci%C3%B3n-p%C3%A1ra-llenar-el-documento-word.">Paso 4.1: Función pára llenar el documento word.<a class="anchor-link" href="#Paso-4.1:-Funci%C3%B3n-p%C3%A1ra-llenar-el-documento-word.">¶</a></h2>
 </div>
 </div>
 </div>
@@ -7769,7 +7789,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Notece la línea 5, pues hará que el márcador será igual a la columna con el mismo nombre. Es decir, el marcador de laa plantilla se llenará con el dato de la columna correspondiente.</p>
+<p>Notece la línea 5, pues hará que el márcador será igual a la columna con el mismo nombre. Es decir, el marcador de la plantilla se llenará con el dato de la columna correspondiente.</p>
 </div>
 </div>
 </div>
@@ -7780,7 +7800,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Funci%C3%B3n-para-generar-los-examenes-individuales.">Función para generar los examenes individuales.<a class="anchor-link" href="#Funci%C3%B3n-para-generar-los-examenes-individuales.">¶</a></h2>
+<h2 id="Paso-4.2:-Funci%C3%B3n-para-generar-los-examenes-individuales.">Paso 4.2: Función para generar los examenes individuales.<a class="anchor-link" href="#Paso-4.2:-Funci%C3%B3n-para-generar-los-examenes-individuales.">¶</a></h2>
 </div>
 </div>
 </div>
@@ -7808,13 +7828,24 @@ a.anchor-link {
 </div>
 </div>
 </div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6418b6d6-348f-489f-b14e-895a769230d1">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Notece que al final de cada proceso se mostrará un mensaje en la consola, esto es útil pues nos permite observar si la función está funcionando de manera adecuada. Por su puesto, los emojis son opcionales.</p>
+</div>
+</div>
+</div>
+</div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f789e935-ebd9-4714-89e6-8ecba3fc2ac5">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Funci%C3%B3n-para-unir-los-diferentes-PDF's-en-un-s%C3%B3lo-archivo">Función para unir los diferentes PDF's en un sólo archivo<a class="anchor-link" href="#Funci%C3%B3n-para-unir-los-diferentes-PDF's-en-un-s%C3%B3lo-archivo">¶</a></h2>
+<h2 id="Paso-4.3:-Funci%C3%B3n-para-unir-los-diferentes-PDF's-en-un-s%C3%B3lo-archivo">Paso 4.3: Función para unir los diferentes PDF's en un sólo archivo<a class="anchor-link" href="#Paso-4.3:-Funci%C3%B3n-para-unir-los-diferentes-PDF's-en-un-s%C3%B3lo-archivo">¶</a></h2>
 </div>
 </div>
 </div>
@@ -7839,6 +7870,17 @@ a.anchor-link {
         <span class="n">merger</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
 </div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8e47dff0-4655-4812-b22e-ed5712b03dd0">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>En este punto conviene observar algunas cosas, en primer lugar, se creará una carpeta por cada profesor, y dentro de ella se encontrarán los examenes de cada uno de los alumnos. En segundo lugar, dichos examenes estarán tanto en formato word y formato pdf, esto tiene dos motivos, en formato word el usuario podrá hacer las moficiaciones pertnentes a sus archivos (de haber alguna), y dos el formato pdf es un formato común en el que se suele solicitar archivos. Finalmente, los archivos PDF que contienen todos los examenes de un sólo profesor, tienen su propia ruta.</p>
 </div>
 </div>
 </div>
